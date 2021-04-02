@@ -110,6 +110,8 @@ if __name__ == '__main__':
 	parser.add_argument(
 		'-n', '--numbers', type=int, default=3,
 		help="amount of generated names or passwords")
+	group = parser.add_mutually_exclusive_group()
+	group.add_argument('-nb', '--noBanner', action='store_true', help='no print banner')
 	args = parser.parse_args()
-	print(banner())
+	if args.noBanner: print(banner())
 	main(args.chars, args.generate, args.numbers)
