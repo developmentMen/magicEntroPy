@@ -113,5 +113,5 @@ if __name__ == '__main__':
 	group = parser.add_mutually_exclusive_group()
 	group.add_argument('-nb', '--noBanner', action='store_true', help='no print banner')
 	args = parser.parse_args()
-	if args.noBanner: print(banner())
+	if not args.noBanner: print(banner())
 	main(args.chars, args.generate, args.numbers)
