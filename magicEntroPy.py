@@ -3,7 +3,7 @@
 # =============================
 # Author	--> devMen
 # Date created	--> 01/04/2021
-# Last modified	--> 02/04/2021 <-- UPDATE HERE
+# Last modified	--> 04/04/2021
 # Version	--> Python 3.8.5
 # =============================
 '''
@@ -19,10 +19,10 @@
 import random
 import argparse
 # =============================
-ABC='abcdefghijklmnñopqrstuvwxyz'	#<-- for change the letters
-SIMBOLS = '¡?=)(/&%$#"!°|*[]-_,;.'	#<-- for change the simbols
-VOWELS = "aeiou"			#<-- for vowels in name
-CONSONANTS = "bcdfghjklmnpqrstvwxyz"	#<-- for consonants in name
+ABC		= 'abcdefghijklmnñopqrstuvwxyz'	#<-- for change the letters
+SIMBOLS		= '¡?=)(/&%$#"!°|*[]-_,;.'	#<-- for change the simbols
+VOWELS		= "aeiou"			#<-- for vowels in name
+CONSONANTS	= "bcdfghjklmnpqrstvwxyz"	#<-- for consonants in name
 
 def banner():
 	return """
@@ -102,13 +102,13 @@ def main(chars, generateType, numbers):
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser(description="generate random user and pass")
 	parser.add_argument(
-		'-c', '--chars', type=int, required=True,
+		'-c', '--chars', type=int, required=True, metavar="Int",
 		help="nums of chars in string")
 	parser.add_argument(
-		'-g', '--generate', type=str, default='all',
+		'-g', '--generate', type=str, default='all', metavar="Str",
 		help="generate name|pass|strongPass ---> n | p | s")
 	parser.add_argument(
-		'-n', '--numbers', type=int, default=3,
+		'-n', '--numbers', type=int, default=3,  metavar="Int",
 		help="amount of generated names or passwords")
 	group = parser.add_mutually_exclusive_group()
 	group.add_argument('-nb', '--noBanner', action='store_true', help='no print banner')
