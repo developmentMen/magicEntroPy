@@ -6,7 +6,7 @@
 
 ## Como se usa?
 
-|python3 magicEntroPy.py -c 5|
+ | python3 magicEntroPy.py -c 5 |
 
 ![magic EntroPy](img/comoUsar.png)
 
