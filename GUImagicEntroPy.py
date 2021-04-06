@@ -1,10 +1,14 @@
-#cols	 |	0	|	1	|	2	|	3	|
+#cols	 |	0	|	1	|	2	|
 #rows	0|	banner		banner		banner
 #	1| chars in Str	|Generate variab| amount output |
 #	2|   Combobox	|   Combobox	|   Combobox	|
 #	3|	<--	 Generate Button	-->
 #	4|		by DevMen
 #	5|	<--	     Outputs		-->
+
+"""
+this GUI is funcional but don't copy the output...I work in that
+"""
 
 import random
 from tkinter import *
